@@ -371,6 +371,7 @@ class AllegroRestApi
         ));
         
         // We have found an error in response
+        /*
         if (isset($response->errors) || isset($response->error_description)) {
 
             // Throwing an exception
@@ -379,6 +380,7 @@ class AllegroRestApi
                 $this->getResponseCode($http_response_header)
             );
         }
+        */
         
         // Checking if our response is a valid object
         if (!is_object($response)) {
